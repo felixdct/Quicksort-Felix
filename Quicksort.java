@@ -34,7 +34,6 @@ public class Quicksort {
             a.quicksortOperation(numbers, 0, (numbers.length - 1));
             a.PrintSort(Sort);
         }
-        //JOptionPane.showMessageDialog(null, Arrays.toString(Sort));
     }
 
     void quicksortOperation(int arr[], int left, int right) {
@@ -60,16 +59,11 @@ public class Quicksort {
             //JOptionPane.showMessageDialog(null, Arrays.toString(arr));
         }
         /* recursion */
-        //JOptionPane.showMessageDialog(null, i + " y " + j);  
         if (left < j) {
-            //JOptionPane.showMessageDialog(null, "entra al primer if");  
             quicksortOperation(arr, left, j);
-            //JOptionPane.showMessageDialog(null, "Sale del primer if");
         }
         if (i < right) {
-            //JOptionPane.showMessageDialog(null, "entra al segundo if"); 
             quicksortOperation(arr, i, right);
-            //JOptionPane.showMessageDialog(null, "Sale del segundo if");
         }
     }
 
