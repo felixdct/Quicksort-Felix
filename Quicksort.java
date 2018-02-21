@@ -29,10 +29,10 @@ public class Quicksort {
         Quicksort a = new Quicksort();
         int[] numbers = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 3};
         if (numbers.length == 1) {
-            a.PrintSort(numbers);
+            a.printSort(numbers);
         } else {
             a.quicksortOperation(numbers, 0, (numbers.length - 1));
-            a.PrintSort(Sort);
+            a.printSort(Sort);
         }
     }
 
@@ -67,7 +67,7 @@ public class Quicksort {
         }
     }
 
-    void PrintSort(int[] numbers) {
+    void printSort(int[] numbers) {
         JOptionPane.showMessageDialog(null, Arrays.toString(numbers));
     }
 }
